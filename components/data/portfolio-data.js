@@ -115,10 +115,10 @@ export const education = [
 ];
 
 export const certificates = [
-  { title: 'SEO', issuer: 'DigiSkills', date: '2025', link: '#' },
-  { title: 'Digital Literacy', issuer: 'DigiSkills', date: '2025', link: '#' },
-  { title: 'Video Editing, Animation and Vlogging', issuer: 'DigiSkills', date: '2025', link: '#' },
-  { title: 'Freelancing', issuer: 'DigiSkills', date: '2025', link: '#' },
+  { title: 'SEO', issuer: 'DigiSkills', date: '2025 - 2026', link: '#' },
+  { title: 'Digital Literacy', issuer: 'DigiSkills', date: '2025 - 2026', link: '#' },
+  { title: 'Video Editing, Animation and Vlogging', issuer: 'DigiSkills', date: '2025 - 2026', link: '#' },
+  { title: 'Freelancing', issuer: 'DigiSkills', date: '2025 - 2026', link: '#' },
   { title: 'Office Management and Computer Hardware', issuer: 'Punjab Polytechnical Institute', date: '2023', link: '#' },
   { title: 'Spoken English', issuer: 'Punjab Polytechnical Institute', date: '2023', link: '#' },
   { title: 'Graphic Designing', issuer: 'Heaven Of Education', date: '2023', link: '#' },

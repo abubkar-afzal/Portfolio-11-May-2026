@@ -6,9 +6,13 @@ import Education from '@/components/sections/Education';
 import Certificates from '@/components/sections/Certificates';
 import Skills from '@/components/sections/Skills';
 import Contact from '@/components/sections/Contact';
+import Head from 'next/head';
 
 export default function Home() {
-  return (
+  return (<>
+    <Head>
+        <title>Hafiz Abubakar Afzal — Full‑Stack Developer | React, Next.js & Node.js</title>
+      </Head>
     <Layout>
       <Hero />
       <About />
@@ -18,5 +22,5 @@ export default function Home() {
       <Skills />
       <Contact />
     </Layout>
-  );
+ </> );
 }

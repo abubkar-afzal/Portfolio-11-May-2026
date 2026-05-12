@@ -14,10 +14,8 @@ export default function Certificates() {
           {certificates.map((cert, idx) => (
             <a
               key={idx}
-              href={cert.link}
-              target="_blank"
               rel="noopener noreferrer"
-              className="group p-6 rounded-2xl border-2 border-border bg-surface hover:border-accent hover:shadow-xl hover:shadow-accent/5 transition-all duration-300"
+              className="group p-6 rounded-2xl border-2 border-border bg-surface hover:border-accent hover:shadow-xl hover:shadow-accent/5 transition-all duration-300 cursor-pointer"
             >
               <FiAward className="text-accent mb-4" size={28} />
               <p className="text-xs text-accent font-mono">{cert.date}</p>

@@ -1,5 +1,6 @@
 import SectionWrapper from '@/components/ui/SectionWrapper';
 import { aboutText, personalInfo } from '@/components/data/portfolio-data';
+import { FaLocationDot } from 'react-icons/fa6';
 
 export default function About() {
   return (
@@ -20,16 +21,16 @@ export default function About() {
                   <div className="h-px bg-border" />
                   <div className="flex gap-6">
                     <div>
-                      <p className="text-3xl font-bold text-foreground">50+</p>
+                      <p className="text-3xl font-bold text-foreground">20+</p>
                       <p className="text-sm text-foreground-muted">Projects</p>
                     </div>
                     <div>
-                      <p className="text-3xl font-bold text-foreground">30+</p>
+                      <p className="text-3xl font-bold text-foreground">10+</p>
                       <p className="text-sm text-foreground-muted">Clients</p>
                     </div>
                   </div>
                   <div className="h-px bg-border" />
-                  <p className="text-sm text-foreground-muted">📍 {personalInfo.location}</p>
+                  <p className="text-sm text-foreground-muted flex items-center space-x-2"><FaLocationDot className="mx-2"/> {personalInfo.location}</p>
                 </div>
               </div>
             </div>
@@ -39,7 +40,7 @@ export default function About() {
           <div className="md:col-span-3 order-1 md:order-2">
             <p className="text-accent font-mono text-xs tracking-[0.3em] mb-4">ABOUT ME</p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-8 leading-tight">
-              Crafting digital
+              Digital
               <br />
               <span className="text-accent">experiences</span>
             </h2>

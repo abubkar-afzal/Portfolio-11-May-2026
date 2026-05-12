@@ -7,8 +7,6 @@ import { personalInfo } from '@/components/data/portfolio-data';
 import { Link } from 'react-scroll';
 import { FiArrowDown, FiArrowRight } from 'react-icons/fi';
 
-/* ===== THREE.JS COMPONENTS ===== */
-
 // Rotating Flower Petals
 function FlowerPetals({ color1, color2 }) {
   const groupRef = useRef();
@@ -61,7 +59,6 @@ function FlowerPetals({ color1, color2 }) {
   );
 }
 
-// Abstract Gun Shape
 function AbstractGun({ color }) {
   const groupRef = useRef();
 
@@ -137,8 +134,6 @@ function ParticleField({ count = 300 }) {
   );
 }
 
-/* ===== MAIN HERO COMPONENT ===== */
-
 export default function Hero() {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -200,9 +195,8 @@ export default function Hero() {
               {/* Image Container */}
               <div className="relative rounded-3xl overflow-hidden border-2 border-border bg-surface-elevated shadow-2xl">
                 <div className="aspect-[3/4] relative">
-                  {/* Placeholder for your image */}
                   <Image
-                    src="/your-photo.jpg" // Replace with your actual image path
+                    src="/me.jpg" 
                     alt={personalInfo.name}
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-700"
@@ -248,7 +242,7 @@ export default function Hero() {
                 <br />
                 <span className="text-accent">{personalInfo.name.split(' ')[1]}</span>
                 <br />
-                <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-foreground-muted">
+                <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-foreground-muted">
                   {personalInfo.name.split(' ')[2]}
                 </span>
               </h1>
@@ -276,12 +270,12 @@ export default function Hero() {
               </div>
               <div className="w-px bg-border" />
               <div>
-                <p className="text-3xl md:text-4xl font-display font-bold text-foreground">50<span className="text-accent">+</span></p>
+                <p className="text-3xl md:text-4xl font-display font-bold text-foreground">20<span className="text-accent">+</span></p>
                 <p className="text-xs md:text-sm text-foreground-muted">Projects Done</p>
               </div>
               <div className="w-px bg-border" />
               <div>
-                <p className="text-3xl md:text-4xl font-display font-bold text-foreground">30<span className="text-accent">+</span></p>
+                <p className="text-3xl md:text-4xl font-display font-bold text-foreground">10<span className="text-accent">+</span></p>
                 <p className="text-xs md:text-sm text-foreground-muted">Happy Clients</p>
               </div>
             </motion.div>
@@ -322,7 +316,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+        className="absolute bottom-0 lg:bottom-8 left-1/2 -translate-x-1/2 z-10"
       >
         <Link
           to="about"

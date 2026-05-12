@@ -1,5 +1,5 @@
 import { personalInfo } from '@/components/data/portfolio-data';
-import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiGithub, FiInstagram, FiLinkedin, FiTwitter } from 'react-icons/fi';
 
 export default function Footer() {
   return (
@@ -9,9 +9,9 @@ export default function Footer() {
         <div className="flex gap-5">
           <a href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><FiGithub size={18} /></a>
           <a href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><FiLinkedin size={18} /></a>
-          <a href={personalInfo.socials.twitter} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><FiTwitter size={18} /></a>
+          <a href={personalInfo.socials.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><FiInstagram size={18} /></a>
         </div>
-        <p>Designed with passion & built with Next.js</p>
+        <p className="hidden lg:block">Designed with passion & built with Next.js</p>
       </div>
     </footer>
   );

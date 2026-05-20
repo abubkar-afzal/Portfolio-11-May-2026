@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: 'Hafiz Abubakar Afzal',
   title: 'Full-Stack Developer',
-  tagline: 'I create digital experiences that feel alive — performant, elegant, and impossible to ignore.',
+  tagline: 'I create digital experiences that feel alive performant, elegant, and impossible to ignore.',
   location: 'Lahore, Pakistan',
   email: 'hafizabubakarafzal@gmail.com',
   socials: {
@@ -14,7 +14,7 @@ export const personalInfo = {
 
 export const aboutText = [
   'I am a full‑stack developer who believes code is a craft. With 4+ years of experience I turn ambitious ideas into robust, scalable products.',
-  'My core stack is React, Next.js, Node.js and TypeScript, enriched by TailwindCSS. I thrive on polished UI, clean architecture, and speedy SEO.',
+  'My core stack is React, Next.js, Node.js and JavaScript, enriched by TailwindCSS. I thrive on polished UI, clean architecture, and speedy SEO.',
   'Beyond coding I’m a chess enthusiast, open‑source contributor, and a lifelong learner who’s always chasing the next elegant solution.',
 ];
 
@@ -115,18 +115,19 @@ export const education = [
 ];
 
 export const certificates = [
-  { title: 'SEO', issuer: 'DigiSkills', date: '2025 - 2026', link: '#' },
-  { title: 'Digital Literacy', issuer: 'DigiSkills', date: '2025 - 2026', link: '#' },
-  { title: 'Video Editing, Animation and Vlogging', issuer: 'DigiSkills', date: '2025 - 2026', link: '#' },
-  { title: 'Freelancing', issuer: 'DigiSkills', date: '2025 - 2026', link: '#' },
-  { title: 'Office Management and Computer Hardware', issuer: 'Punjab Polytechnical Institute', date: '2023', link: '#' },
-  { title: 'Spoken English', issuer: 'Punjab Polytechnical Institute', date: '2023', link: '#' },
-  { title: 'Graphic Designing', issuer: 'Heaven Of Education', date: '2023', link: '#' },
+  { title: 'SEO', issuer: 'DigiSkills', date: '2025 - 2026', link: '/' },
+  { title: 'Digital Literacy', issuer: 'DigiSkills', date: '2025 - 2026', link: '/' },
+  { title: 'Video Editing, Animation and Vlogging', issuer: 'DigiSkills', date: '2025 - 2026', link: '/' },
+  { title: 'Freelancing', issuer: 'DigiSkills', date: '2025 - 2026', link: '/' },
+  { title: 'Office Management and Computer Hardware', issuer: 'Punjab Polytechnical Institute', date: '2023', link: '/' },
+  { title: 'Spoken English', issuer: 'Punjab Polytechnical Institute', date: '2023', link: '/' },
+  { title: 'Graphic Designing', issuer: 'Heaven Of Education', date: '2023', link: '/' },
 ];
 
 export const skills = [
-  { category: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Babylon.js'] },
-  { category: 'Backend', items: ['Node.js', 'Express', 'Next.js', 'Django'] },
-  { category: 'Database', items: ['MongoDB', 'PostgreSQL', 'MySQL', 'SQL Lite', 'Redux'] },
+  { category: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'TailwindCSS', 'Babylon.js'] },
+  { category: 'Backend', items: ['Node.js', 'Express', 'Next.js', 'Django', 'PHP','Python', 'Flask'
+  ] },
+  { category: 'Database', items: ['MongoDB', 'MySQL', 'SQL Lite', 'Redux'] },
   { category: 'DevOps', items: ['Vercel'] },
 ];

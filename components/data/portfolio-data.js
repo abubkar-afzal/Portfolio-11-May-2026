@@ -24,7 +24,7 @@ export const projects = [
     description: 'Online property booking platform through agent.',
     image: '/property.png',
     tags: ['Next.js', 'SQL Lite', 'TailwindCSS', 'OAuth', 'Splide.js', 'Vercel', 'React Libraries'],
-    live: 'https://property-abubkar-afzals-projects.vercel.app/',
+    live: 'https://property-tau-seven.vercel.app/',
     github: 'https://github.com/abubkar-afzal/property',
   },
   {
@@ -130,4 +130,5 @@ export const skills = [
   ] },
   { category: 'Database', items: ['MongoDB', 'MySQL', 'SQL Lite', 'Redux'] },
   { category: 'DevOps', items: ['Vercel'] },
+  { category: 'Design', items: ['CorelDraw', 'Figma', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe After Effects', 'Adobe Premiere Pro', 'Blender', 'Alight Motion' ] }
 ];

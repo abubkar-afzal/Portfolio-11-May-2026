@@ -20,6 +20,14 @@ export const aboutText = [
 
 export const projects = [
   {
+    title: 'Ar Studio',
+    description: 'A free browser based creative suite with powerful tools for photos, videos, and audio. Everything runs locally. Your files never leave your device.',
+    image: '/ar-studio.png',
+    tags: ['Next.js', 'TailwindCSS', 'Framer Motion', 'Vercel', 'React Libraries'],
+    live: 'https://ar-studio-five.vercel.app/',
+    github: 'https://github.com/abubkar-afzal/ar-studio',
+  },
+  {
     title: 'PropetyPro',
     description: 'Online property booking platform through agent.',
     image: '/property.png',

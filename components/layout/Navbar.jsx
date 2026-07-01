@@ -34,7 +34,7 @@ export default function Navbar() {
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-500 ${
           scrolled
-            ? 'bg-background/80 backdrop-blur-xl border-b border-border shadow-lg'
+            ? 'bg-background/80 backdrop-blur-xl shadow-lg'
             : 'bg-transparent'
         }`}
       >
@@ -64,11 +64,11 @@ export default function Navbar() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300" />
               </Link>
             ))}
-            <ThemeToggle />
+            <ThemeToggle className="cursor-pointer"/>
           </div>
 
           {/* Mobile controls */}
-          <div className="md:hidden flex items-center gap-3">
+          <div className="md:hidden flex items-center gap-3 cursor-pointer">
             <ThemeToggle />
             <button
               onClick={() => setMobileOpen(!mobileOpen)}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hafizabubakarafzal.vercel.app/sitemap.xml

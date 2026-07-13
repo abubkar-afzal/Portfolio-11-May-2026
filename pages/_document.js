@@ -25,11 +25,11 @@ class MyDocument extends Document {
 
           {/* =====  META TAGS ===== */}
           <meta name="description" content="I'm Hafiz Abubakar Afzal, a full‑stack developer crafting high‑performance web apps with React, Next.js, Node.js, and cloud technologies. View my projects, education, and certificates." />
-          <meta name="keywords" content="Hafiz Abubakar Afzal, full-stack developer, React developer, Next.js expert, Node.js developer, JavaScript, TypeScript, portfolio, web developer, software engineer, Lahore, Pakistan" />
+          <meta name="keywords" content="Hafiz Abubakar Afzal, full-stack developer, React developer, Next.js expert, Node.js developer, JavaScript, TypeScript, portfolio, web developer, software engineer, Lahore, Pakistan, hafiz abubakar afzal, hafizabubakarafzal, hafizabubakarafzal vercel app, Hafiz Abubakar Afzal Vercel App, " />
           <meta name="author" content="Hafiz Abubakar Afzal" />
           <meta name="robots" content="index, follow, max-image-preview:large" />
           <link rel="canonical" href="https://hafizabubakarafzal.vercel.app/" />
-
+          <link rel="manifest" href="/manifest.json" />
           {/* ===== OPEN GRAPH ===== */}
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://hafizabubakarafzal.vercel.app/" />

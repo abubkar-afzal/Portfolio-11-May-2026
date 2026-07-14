@@ -10,11 +10,13 @@ export default function SplideSlider({ items }) {
     gap: '2rem',
     autoplay: true,
     interval: 6000,
-    pauseOnHover: false,
+    pauseOnHover: true,
+    playback: true,
     pagination: true,
-    arrows: true,
+    arrows: false,
+    scroll:true,
     speed: 800,
-    easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
+    // easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
     breakpoints: {
       768: { 
         perPage: 1,

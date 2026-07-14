@@ -43,7 +43,6 @@ export default function Navbar() {
             to="hero"
             smooth
             spy
-            offset={-100}
             className="text-xl md:text-2xl font-display font-bold text-foreground cursor-pointer hover:text-accent transition-colors"
           >
             {personalInfo.name.split(' ')[1]}
@@ -56,8 +55,7 @@ export default function Navbar() {
                 key={link.to}
                 to={link.to}
                 smooth
-                spy
-                offset={-80}
+                
                 className="text-sm font-medium text-foreground-muted hover:text-accent cursor-pointer transition-colors relative group"
               >
                 {link.label}
@@ -110,8 +108,7 @@ export default function Navbar() {
               key={link.to}
               to={link.to}
               smooth
-              spy
-              offset={-80}
+              
               className="text-3xl font-display font-bold text-foreground-muted hover:text-accent transition-colors cursor-pointer"
               style={{
                 transitionDelay: mobileOpen ? `${i * 100}ms` : '0ms',

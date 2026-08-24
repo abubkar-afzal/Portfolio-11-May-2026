@@ -258,7 +258,7 @@ export default function Hero() {
             </motion.p>
 
             {/* Stats Row */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
@@ -273,12 +273,8 @@ export default function Hero() {
                 <p className="text-3xl md:text-4xl font-display font-bold text-foreground">20<span className="text-accent">+</span></p>
                 <p className="text-xs md:text-sm text-foreground-muted">Projects Done</p>
               </div>
-              <div className="w-px bg-border" />
-              <div>
-                <p className="text-3xl md:text-4xl font-display font-bold text-foreground">10<span className="text-accent">+</span></p>
-                <p className="text-xs md:text-sm text-foreground-muted">Happy Clients</p>
-              </div>
-            </motion.div>
+              
+            </motion.div> */}
 
             {/* CTAs */}
             <motion.div

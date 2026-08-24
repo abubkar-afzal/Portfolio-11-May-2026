@@ -1,11 +1,13 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import Image from 'next/image';
+import Link from 'next/link';                 // ✅ added
 import { motion } from 'framer-motion';
 import { FiExternalLink, FiGithub, FiArrowRight } from 'react-icons/fi';
 
 export default function SplideSlider({ items }) {
   const options = {
     type: 'loop',
+    padding: '5%',
     perPage: 1,
     gap: '2rem',
     autoplay: true,
@@ -14,11 +16,10 @@ export default function SplideSlider({ items }) {
     playback: true,
     pagination: true,
     arrows: false,
-    scroll:true,
+    scroll: true,
     speed: 800,
-    // easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
     breakpoints: {
-      768: { 
+      768: {
         perPage: 1,
         arrows: false,
       },
@@ -50,11 +51,6 @@ export default function SplideSlider({ items }) {
 
             {/* Content Section - 2 columns */}
             <div className="md:col-span-2 p-8 md:p-12 flex flex-col justify-center relative">
-              {/* Decorative number */}
-              {/* <span className="absolute top-6 right-6 text-8xl font-display font-bold text-border/20 select-none">
-                {String(idx + 1).padStart(2, '0')}
-              </span> */}
-
               <div className="relative z-10">
                 <p className="text-accent font-mono text-xs tracking-widest mb-3">
                   FEATURED PROJECT
@@ -77,7 +73,7 @@ export default function SplideSlider({ items }) {
                   ))}
                 </div>
 
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-4 items-center justify-center content-center">
                   <a
                     href={item.live}
                     target="_blank"
@@ -97,6 +93,15 @@ export default function SplideSlider({ items }) {
                     <FiGithub size={16} />
                     Source Code
                   </a>
+
+                  {/* ✅ NEW "View Details" button */}
+<Link
+  href={`/projects/${item.slug}`}
+  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border-2 border-accent/30 text-accent font-semibold text-sm hover:bg-accent hover:text-accent-contrast hover:border-accent transition-all"
+>
+  View Details
+  <FiArrowRight className="transition-transform group-hover:translate-x-1" size={14} />
+</Link>
                 </div>
               </div>
             </div>

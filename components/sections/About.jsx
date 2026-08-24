@@ -18,17 +18,7 @@ export default function About() {
                     <span className="text-foreground-muted">Years</span>
                   </div>
                   <p className="text-foreground-muted">Building digital products</p>
-                  <div className="h-px bg-border" />
-                  <div className="flex gap-6">
-                    <div>
-                      <p className="text-3xl font-bold text-foreground">20+</p>
-                      <p className="text-sm text-foreground-muted">Projects</p>
-                    </div>
-                    <div>
-                      <p className="text-3xl font-bold text-foreground">10+</p>
-                      <p className="text-sm text-foreground-muted">Clients</p>
-                    </div>
-                  </div>
+                  
                   <div className="h-px bg-border" />
                   <p className="text-sm text-foreground-muted flex items-center space-x-2"><FaLocationDot className="mx-2"/> {personalInfo.location}</p>
                 </div>

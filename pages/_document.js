@@ -24,8 +24,8 @@ class MyDocument extends Document {
           />
 
           {/* =====  META TAGS ===== */}
-          <meta name="description" content="I'm Hafiz Abubakar Afzal, a full‑stack developer crafting high‑performance web apps with React, Next.js, Node.js, and cloud technologies. View my projects, education, and certificates." />
-          <meta name="keywords" content="Hafiz Abubakar Afzal, full-stack developer, React developer, Next.js expert, Node.js developer, JavaScript, TypeScript, portfolio, web developer, software engineer, Lahore, Pakistan, hafiz abubakar afzal, hafizabubakarafzal, hafizabubakarafzal vercel app, Hafiz Abubakar Afzal Vercel App, " />
+          <meta name="description" content="I'm Hafiz Abubakar Afzal, a full‑stack developer crafting high‑performance applications with React, Next.js, Electron.js, React Native, and cloud technologies. View my projects, education, and certificates." />
+          <meta name="keywords" content="Hafiz Abubakar Afzal, full-stack developer, React developer, Next.js expert, Node.js developer, JavaScript, TypeScript, portfolio, web developer, software engineer, Lahore, Pakistan, hafiz abubakar afzal, hafizabubakarafzal, hafizabubakarafzal vercel app, Hafiz Abubakar Afzal Vercel App, Electron.js, React Native, Best Full Stack Developer in Lahore, Best Full Stack Developer in Pakistan" />
           <meta name="author" content="Hafiz Abubakar Afzal" />
           <meta name="robots" content="index, follow, max-image-preview:large" />
           <link rel="canonical" href="https://hafizabubakarafzal.vercel.app/" />
@@ -34,7 +34,7 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://hafizabubakarafzal.vercel.app/" />
           <meta property="og:title" content="Hafiz Abubakar Afzal — Full‑Stack Developer" />
-          <meta property="og:description" content="I build modern, performant web experiences. Explore my portfolio showcasing projects, education, and technical skills." />
+          <meta property="og:description" content="I build modern, performant applications with React, Next.js, Electron.js, and React Native. Explore my portfolio showcasing projects, education, and technical skills." />
           <meta property="og:image" content="https://hafizabubakarafzal.vercel.app/og-image.jpg" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
@@ -58,12 +58,18 @@ class MyDocument extends Document {
                 "@context": "https://schema.org",
                 "@type": "Person",
                 "name": "Hafiz Abubakar Afzal",
+                "son of": "Mirza Muhammad Afzal Baig",
                 "url": "https://hafizabubakarafzal.vercel.app/",
                 "jobTitle": "Full-Stack Developer",
+                "email": "mailto:hafizabubakarafzal@gmail.com",
+                "telephone": "+923270972423",
+                "whatsapp": "https://wa.me/923270972423",
                 "image": "https://hafizabubakarafzal.vercel.app/og-image.jpg",
-                "description": "Full‑stack developer with expertise in React, Next.js, Node.js, TypeScript, and cloud technologies. Based in Lahore, Pakistan.",
+                "description": "Full‑stack developer with expertise in React, Next.js, Electron.js, React Native, and cloud technologies. Based in Lahore, Pakistan.",
                 "knowsAbout": [
                   "Web Development",
+                  "Desktop Application Development",
+                  "Mobile Application Development",
                   "React",
                   "Next.js",
                   "Node.js",
@@ -72,12 +78,17 @@ class MyDocument extends Document {
                   "MongoDB",
                   "Vercel",
                   "AWS",
+                  "Git",
+                  "Electron.js",
+                  "React Native",
                 ],
                 "sameAs": [
                   "https://github.com/abubkar-afzal",
                   "https://www.linkedin.com/in/hafiz-abubakar-afzal-b77a46354/",
                   "https://www.instagram.com/ar_codes504/",
                   "https://wa.me/923270972423",
+                  "https://x.com/arcodes504",
+                  "https://www.facebook.com/ar.codes504/",
                 ],
                 "address": {
                   "@type": "PostalAddress",

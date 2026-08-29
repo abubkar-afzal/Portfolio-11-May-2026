@@ -1,10 +1,15 @@
 export const personalInfo = {
   name: 'Hafiz Abubakar Afzal',
+  sonOf: 'Mirza Muhammad Afzal Baig',
   title: 'Full-Stack Developer',
   tagline: 'I create digital experiences that feel alive performant, elegant, and impossible to ignore.',
   location: 'Lahore, Pakistan',
   email: 'hafizabubakarafzal@gmail.com',
+  phone: '03270972423',
+  whatsapp: '+923270972423',
   socials: {
+    x: 'https://x.com/arcodes504',
+    facebook: 'https://www.facebook.com/ar.codes504/',
     github: 'https://github.com/abubkar-afzal',
     linkedin: 'https://www.linkedin.com/in/hafiz-abubakar-afzal-b77a46354/',
     instagram: 'https://www.instagram.com/ar_codes504/',
@@ -14,7 +19,7 @@ export const personalInfo = {
 
 export const aboutText = [
   'I am a full‑stack developer who believes code is a craft. With 4+ years of experience I turn ambitious ideas into robust, scalable products.',
-  'My core stack is React, Next.js, Node.js and JavaScript, enriched by TailwindCSS. I thrive on polished UI, clean architecture, and speedy SEO.',
+  'My core stack is React, Next.js, Node.js, Electorn.js and React Native, enriched by TailwindCSS. I thrive on polished UI, clean architecture, and speedy SEO.',
   'Beyond coding I’m a chess enthusiast, open‑source contributor, and a lifelong learner who’s always chasing the next elegant solution.',
 ];
 
@@ -337,7 +342,7 @@ export const certificates = [
 ];
 
 export const skills = [
-  { category: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'TailwindCSS', 'Babylon.js', 'Wordpress', 'Figma'] },
+  { category: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'TailwindCSS', 'Babylon.js', 'Wordpress', 'Figma', 'React Native', 'Electron.js'] },
   { category: 'Backend', items: ['Node.js', 'Express', 'Next.js', 'Django', 'PHP','Python', 'Flask'
   ] },
   { category: 'Database', items: ['MongoDB', 'MySQL', 'SQL Lite', 'Redux'] },

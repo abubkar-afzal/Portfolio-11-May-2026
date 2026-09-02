@@ -50,7 +50,7 @@ export default function Contact() {
             className="group inline-flex items-center gap-3 px-8 py-4 rounded-full border border-accent/30 text-foreground hover:bg-accent/10 transition-all"
           >
             <FiPhone size={18} />
-            {personalInfo.phone}
+            03270972423
           </a>
 
           {/* Location */}

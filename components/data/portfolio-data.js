@@ -342,8 +342,8 @@ export const certificates = [
 ];
 
 export const skills = [
-  { category: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'TailwindCSS', 'Babylon.js', 'Wordpress', 'Figma', 'React Native', 'Electron.js'] },
-  { category: 'Backend', items: ['Node.js', 'Express', 'Next.js', 'Django', 'PHP','Python', 'Flask'
+  { category: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'TailwindCSS', 'Babylon.js', 'Three.js', 'Wordpress', 'Figma', 'React Native', 'Electron.js'] },
+  { category: 'Backend', items: ['Node.js', 'Express.js', 'Next.js', 'Django', 'PHP','Python', 'Flask'
   ] },
   { category: 'Database', items: ['MongoDB', 'MySQL', 'SQL Lite', 'Redux'] },
   { category: 'AI/ML', items: ['Pandas', 'Numpy', 'Matplotlib', 'TensorFlow'] },

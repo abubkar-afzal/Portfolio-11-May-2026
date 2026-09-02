@@ -54,7 +54,7 @@ export default function Navbar() {
               <Link
                 key={link.to}
                 to={link.to}
-                smooth
+                
                 
                 className="text-sm font-medium text-foreground-muted hover:text-accent cursor-pointer transition-colors relative group"
               >
@@ -107,7 +107,7 @@ export default function Navbar() {
             <Link
               key={link.to}
               to={link.to}
-              smooth
+              
               
               className="text-3xl font-display font-bold text-foreground-muted hover:text-accent transition-colors cursor-pointer"
               style={{

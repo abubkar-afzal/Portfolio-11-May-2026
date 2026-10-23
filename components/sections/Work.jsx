@@ -1,17 +1,19 @@
-import SectionWrapper from '@/components/ui/SectionWrapper';
-import SplideSlider from '@/components/ui/SplideSlider';
-import { projects } from '@/components/data/portfolio-data';
+import dynamic from 'next/dynamic';
+import { projects } from '../data/portfolio-data';
+
+const OfficeScene = dynamic(() => import('../ui/OfficeScene'), {
+  ssr: false,
+  loading: () => (
+    <section className="h-screen flex items-center justify-center bg-background">
+      <div className="animate-spin rounded-full h-12 w-12 border-2 border-accent border-t-transparent" />
+    </section>
+  ),
+});
 
 export default function Work() {
   return (
-    <SectionWrapper id="work" className="py-32 bg-background">
-      <div className="max-w-7xl mx-auto px-6">
-        <p className="font-mono text-sm">PORTFOLIO</p>
-        <h2 className="text-5xl font-display font-bold text-foreground mt-4 mb-16">
-           <span className="text-accent">Projects</span>
-        </h2>
-        <SplideSlider items={projects} />
-      </div>
-    </SectionWrapper>
+    <section id="work" className="relative bg-background">
+      <OfficeScene items={projects} />
+    </section>
   );
 }

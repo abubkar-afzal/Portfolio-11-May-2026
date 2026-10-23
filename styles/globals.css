@@ -178,3 +178,4 @@
   background: var(--color-accent-value);
   border-radius: 3px;
 }
+html { scroll-behavior: smooth; }

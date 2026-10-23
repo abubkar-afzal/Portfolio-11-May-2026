@@ -240,14 +240,13 @@ export default function Hero() {
                   <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-accent to-transparent rounded-full" />
                 </span>
                 <br />
-                <span className="text-accent">{personalInfo.name.split(' ')[1]}</span>
-                <br />
-                <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-foreground-muted">
-                  {personalInfo.name.split(' ')[2]}
-                </span>
+                <div className="text-accent pt-4 ">{personalInfo.name.split(' ')[1]}</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-foreground-muted">
+                {personalInfo.name.split(' ')[2]}
+                </div>
+
               </h1>
             </motion.div>
-
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

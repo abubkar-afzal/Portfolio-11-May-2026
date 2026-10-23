@@ -11,7 +11,7 @@ export default function Footer() {
           <a href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><FiLinkedin size={18} /></a>
           <a href={personalInfo.socials.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors"><FiInstagram size={18} /></a>
         </div>
-        <p className="hidden lg:block">Designed with passion & built with Next.js</p>
+        
       </div>
     </footer>
   );

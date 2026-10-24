@@ -1,10 +1,16 @@
-import { useRouter } from 'next/router';
-import Image from 'next/image';
-import Link from 'next/link';
-import { FiArrowLeft, FiExternalLink, FiGithub, FiArrowRight, FiChevronRight } from 'react-icons/fi';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import { projects } from '../../components/data/portfolio-data';
+import { useRouter } from "next/router";
+import Image from "next/image";
+import Link from "next/link";
+import {
+  FiArrowLeft,
+  FiExternalLink,
+  FiGithub,
+  FiArrowRight,
+  FiChevronRight,
+} from "react-icons/fi";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import { projects } from "../../components/data/portfolio-data";
 
 export default function ProjectDetail({ project, allProjects }) {
   const router = useRouter();
@@ -37,7 +43,10 @@ export default function ProjectDetail({ project, allProjects }) {
           scroll={true}
           className="inline-flex items-center gap-2 text-foreground-muted hover:text-accent transition-colors mb-8 group"
         >
-          <FiArrowLeft className="group-hover:-translate-x-1 transition-transform" size={20} />
+          <FiArrowLeft
+            className="group-hover:-translate-x-1 transition-transform"
+            size={20}
+          />
           Back to projects
         </Link>
 
@@ -83,7 +92,8 @@ export default function ProjectDetail({ project, allProjects }) {
             </div>
 
             {/* Markdown Content with styling */}
-            <div className="prose prose-invert max-w-none
+            <div
+              className="prose prose-invert max-w-none
               prose-headings:font-display prose-headings:font-bold prose-headings:text-foreground
               prose-h1:text-4xl prose-h1:mt-8 prose-h1:mb-6
               prose-h2:text-3xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-border prose-h2:pb-2
@@ -95,7 +105,8 @@ export default function ProjectDetail({ project, allProjects }) {
               prose-a:text-accent prose-a:underline-offset-2 hover:prose-a:text-accent-dark
               prose-code:text-accent prose-code:bg-accent/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
               prose-pre:bg-surface-elevated prose-pre:border prose-pre:border-border prose-pre:p-4 prose-pre:rounded-lg
-            ">
+            "
+            >
               <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {project.content}
               </ReactMarkdown>
@@ -107,19 +118,20 @@ export default function ProjectDetail({ project, allProjects }) {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group/link inline-flex items-center gap-2 px-8 py-4 rounded-full bg-accent text-accent-contrast font-semibold hover:bg-accent-dark transition-all shadow-lg shadow-accent/25"
+                className="group/link inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 xl:px-6 xl:py-3.5 rounded-full bg-accent text-accent-contrast font-semibold text-[11px] sm:text-xs md:text-sm hover:bg-accent-dark transition-all shadow-lg shadow-accent/25"
               >
-                <FiExternalLink size={18} />
+                <FiExternalLink className="w-3 h-3 md:w-4 md:h-4 shrink-0" />
                 Live Demo
-                <FiArrowRight className="group-hover/link:translate-x-1 transition-transform" size={16} />
+                <FiArrowRight className="w-3 h-3 md:w-4 md:h-4 shrink-0 group-hover/link:translate-x-1 transition-transform" />
               </a>
+
               <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-border text-foreground font-semibold hover:border-accent hover:bg-surface-elevated transition-all"
+                className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5 xl:px-6 xl:py-3.5 rounded-full border-2 border-border text-foreground font-semibold text-[11px] sm:text-xs md:text-sm hover:border-accent hover:bg-surface-elevated transition-all"
               >
-                <FiGithub size={18} />
+                <FiGithub className="w-3 h-3 md:w-4 md:h-4 shrink-0" />
                 Source Code
               </a>
             </div>
@@ -132,12 +144,17 @@ export default function ProjectDetail({ project, allProjects }) {
                   className="group flex items-center justify-between p-4 rounded-2xl hover:bg-surface-elevated transition-colors"
                 >
                   <div>
-                    <p className="text-sm text-foreground-muted">Next Project</p>
+                    <p className="text-sm text-foreground-muted">
+                      Next Project
+                    </p>
                     <p className="text-xl font-display font-semibold text-foreground group-hover:text-accent transition-colors">
                       {nextProject.title}
                     </p>
                   </div>
-                  <FiChevronRight className="text-foreground-muted group-hover:text-accent group-hover:translate-x-1 transition-all" size={28} />
+                  <FiChevronRight
+                    className="text-foreground-muted group-hover:text-accent group-hover:translate-x-1 transition-all"
+                    size={28}
+                  />
                 </Link>
               </div>
             )}

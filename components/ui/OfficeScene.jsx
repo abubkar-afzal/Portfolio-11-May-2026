@@ -296,7 +296,7 @@ export default function OfficeScene({ items = [] }) {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-background"
+      className={`relative bg-background`}
       style={{ height: `${totalPages * 60}vh` }}
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden bg-background">
@@ -370,15 +370,11 @@ export default function OfficeScene({ items = [] }) {
                     {/* ---------- CONTENT : scales by breakpoint ---------- */}
                     <div className="md:col-span-2 p-4 sm:p-5 md:p-6 lg:p-8 xl:p-12 flex flex-col justify-center relative h-[50vh] md:h-full max-h-full max-w-full">
                       <div className="relative z-10">
-                        <p className="text-accent font-mono text-[10px] md:text-xs tracking-widest mb-1.5 md:mb-3">
-                          FEATURED PROJECT
-                        </p>
+                        
                         <h3 className="text-xl sm:text-2xl md:text-3xl xl:text-4xl font-display font-bold text-foreground mb-2 md:mb-4 leading-tight line-clamp-2 xl:line-clamp-none">
                           {item.title}
                         </h3>
-                        <p className="text-foreground-muted text-xs sm:text-sm md:text-base xl:text-lg mb-2.5 md:mb-5 leading-relaxed line-clamp-2 xl:line-clamp-none">
-                          {item.description}
-                        </p>
+                        
 
                         {item.tags && item.tags.length > 0 && (
                           <div className="flex flex-wrap gap-1.5 md:gap-2 mb-3 md:mb-6">

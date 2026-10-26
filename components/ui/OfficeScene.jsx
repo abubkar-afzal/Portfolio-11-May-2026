@@ -307,7 +307,7 @@ export default function OfficeScene({ items = [] }) {
           style={{ opacity: overlayOpacity }}
         />
         <motion.div
-          className="absolute top-16 md:top-22 left-6 md:left-16 z-20 pointer-events-none"
+          className="absolute top-18 md:top-24 left-6 md:left-16 z-20 pointer-events-none"
           style={{ opacity: overlayOpacity }}
         >
           <p className="text-accent font-mono text-xs tracking-[0.3em] mb-4">Project's</p>
@@ -374,7 +374,9 @@ export default function OfficeScene({ items = [] }) {
                         <h3 className="text-xl sm:text-2xl md:text-3xl xl:text-4xl font-display font-bold text-foreground mb-2 md:mb-4 leading-tight line-clamp-2 xl:line-clamp-none">
                           {item.title}
                         </h3>
-                        
+                        <p className="text-foreground-muted text-xs sm:text-sm md:text-base xl:text-lg mb-2.5 md:mb-5 leading-relaxed line-clamp-2 xl:line-clamp-none">
+                          {item.description}
+                        </p>
 
                         {item.tags && item.tags.length > 0 && (
                           <div className="flex flex-wrap gap-1.5 md:gap-2 mb-3 md:mb-6">
@@ -389,7 +391,7 @@ export default function OfficeScene({ items = [] }) {
                           </div>
                         )}
 
-                        <div className="flex flex-wrap gap-2 md:gap-3 xl:gap-4 items-center">
+                        <div className="flex flex-wrap gap-2 md:gap-3 xl:gap-4 items-center pt-6">
                           {item.live && (
                             <a
                               href={item.live}
